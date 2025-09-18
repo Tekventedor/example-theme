@@ -1,0 +1,14 @@
+[build]
+  command = "hugo --gc --minify -s exampleSite --themesDir ../.. --baseURL $URL -d public"
+  publish = "exampleSite/public"
+
+[build.environment]
+  HUGO_VERSION = "0.128.0"
+  HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/search/*"
+  to = "/search/"
+  status = 200
+
+
